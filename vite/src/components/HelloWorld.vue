@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import GlobalStateComponent from './globalStateComponent.vue';
 
 defineProps<{ msg: string }>()
 
@@ -16,6 +17,7 @@ function incrementCount() {
     <button type="button" @click="count++">count is {{ count }}</button>
     <button type="button" @click="incrementCount">incrementCount button</button>
   </div>
+  <GlobalStateComponent />
 
 </template>
 
