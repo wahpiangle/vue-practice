@@ -3,10 +3,7 @@
     <Head>
         <title>Products</title>
     </Head>
-    <div v-if="!product" class="text-center p-4">
-        <p class="text-gray-500">Loading product...</p>
-    </div>
-    <div v-else class="bg-white p-4 rounded-lg shadow">
+    <div v-if="product" class="bg-white p-4 rounded-lg shadow">
         <ProductsInfo :product />
     </div>
 </template>
